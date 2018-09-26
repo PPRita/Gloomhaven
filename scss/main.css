@@ -1,0 +1,347 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+html[data-agent*="Trident"] .section-video .blur {
+  display: none;
+}
+
+html[data-agent*="Trident"] .section-video .blur-ie {
+  display: block;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+i {
+  font-style: italic;
+}
+
+b {
+  font-weight: 700;
+}
+
+input, input:before, input:after {
+  -webkit-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+body, html {
+  font-family: "Roboto", sans-serif;
+}
+
+.gloomhaven {
+  background: -webkit-gradient(linear, left top, left bottom, from(#814321), to(rgba(255, 255, 255, 0))), #000000;
+  background: linear-gradient(180deg, #814321 0%, rgba(255, 255, 255, 0) 100%), #000000;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  overflow-y: scroll;
+  padding-bottom: 50px;
+}
+
+.gloomhaven img {
+  padding-top: 10%;
+  margin-bottom: 5px;
+  width: 60%;
+}
+
+.gloomhaven .gloomhavenCard {
+  width: 300px;
+  height: 500px;
+  background: #FFF6E0;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin: 5px auto 0 auto;
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.gloomhaven .gloomhavenCard:after {
+  content: '';
+  width: 285px;
+  height: 482px;
+  border-radius: 10px;
+  border: 2px solid #AF9A65;
+  position: absolute;
+  top: 7px;
+  left: 6px;
+}
+
+.gloomhaven .gloomhavenCard .title {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+
+.gloomhaven .gloomhavenCard .title h1 {
+  font-size: 20px;
+  color: #AF9A65;
+  font-weight: bold;
+  text-align: center;
+}
+
+.gloomhaven .gloomhavenCard .title:after {
+  content: '';
+  height: 1px;
+  width: 275px;
+  background-color: #AF9A65;
+  display: block;
+  margin: 5px auto;
+  text-align: center;
+}
+
+.gloomhaven .gloomhavenCard .pointsCard .pointsZone {
+  width: 265px;
+  margin: 10px auto 0 auto;
+  text-align: center;
+}
+
+.gloomhaven .gloomhavenCard .pointsCard .pointsZone .points {
+  float: left;
+  margin-top: 5px;
+  text-align: left;
+  font-size: 20px;
+  color: #AF9A65;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.gloomhaven .gloomhavenCard .pointsCard .pointsZone .pointsDescription {
+  color: #AF9A65;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  width: 90px;
+}
+
+.gloomhaven .gloomhavenCard .pointsCard .pointsZone .btnsAddRemove {
+  float: right;
+  vertical-align: middle;
+  height: 35px;
+  margin-top: -5px;
+}
+
+.gloomhaven .gloomhavenCard .pointsCard .pointsZone .btnsAddRemove .addBtn {
+  width: 30px;
+  height: 30px;
+  text-align: left;
+}
+
+.gloomhaven .gloomhavenCard .pointsCard .pointsZone .btnsAddRemove .removeBtn {
+  width: 30px;
+  height: 30px;
+  text-align: right;
+  margin-left: 21px;
+}
+
+.gloomhaven .gloomhavenCard .pointsCard:after {
+  content: '';
+  height: 1px;
+  width: 275px;
+  background-color: #AF9A65;
+  display: block;
+  margin: 5px auto;
+  text-align: center;
+}
+
+.gloomhaven .gloomhavenCard .cardsIcons {
+  width: 265px;
+  margin: 10px auto 0 auto;
+  text-align: center;
+}
+
+.gloomhaven .gloomhavenCard .cardsIcons .container {
+  display: inline-block;
+  vertical-align: middle;
+  width: 70px;
+  margin-right: 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.gloomhaven .gloomhavenCard .cardsIcons .container img {
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.gloomhaven .gloomhavenCard .cardsIcons .container .btnsAddRemove {
+  width: 70px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gloomhaven .gloomhavenCard .cardsIcons .container .btnsAddRemove .addBtn {
+  width: 25px;
+  height: 25px;
+  margin-right: 15.5px;
+}
+
+.gloomhaven .gloomhavenCard .cardsIcons .container .btnsAddRemove .removeBtn {
+  width: 25px;
+  height: 25px;
+}
+
+.gloomhaven .gloomhavenCard .cardsIcons .container .points {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #AF9A65;
+}
+
+.gloomhaven .gloomhavenCard .cardsIcons:after {
+  content: '';
+  height: 1px;
+  width: 275px;
+  background-color: #AF9A65;
+  display: block;
+  margin: 5px auto;
+  text-align: center;
+}
+
+.gloomhaven .gloomhavenCard .status {
+  width: 265px;
+  margin: 10px auto 0 auto;
+  text-align: center;
+}
+
+.gloomhaven .gloomhavenCard .status h2 {
+  text-align: left;
+  font-size: 10px;
+  color: #AF9A65;
+}
+
+.gloomhaven .gloomhavenCard .status .icons {
+  width: 265px;
+  margin: 10px auto 0 auto;
+  text-align: center;
+}
+
+.gloomhaven .gloomhavenCard .status .icons .iconsImg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.gloomhaven .gloomhavenCard .status .icons .iconsImg .imgIcon {
+  width: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 3px;
+  mix-blend-mode: multiply;
+  opacity: 0.4;
+}
+
+.gloomhaven .gloomhavenCard .status .icons .iconsImg .activeIcon {
+  mix-blend-mode: none;
+  opacity: 0.9;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+  -webkit-filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+}
+
+.gloomhaven .gloomhavenCard .status:after {
+  content: '';
+  height: 1px;
+  width: 275px;
+  background-color: #AF9A65;
+  display: block;
+  margin: 5px auto;
+  text-align: center;
+}
+
+.gloomhaven .gloomhavenCard .notes {
+  width: 265px;
+  margin: 10px auto 0 auto;
+  text-align: center;
+}
+
+.gloomhaven .gloomhavenCard .notes h2 {
+  text-align: left;
+  font-size: 10px;
+  color: #AF9A65;
+}
+
+.gloomhaven .gloomhavenCard .notes .textarea {
+  margin-top: 5px;
+  width: 265px;
+  height: 100px;
+  border: 1px solid #AF9A65;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0px 0px 10px 10px;
+  background-color: transparent;
+  color: #AF9A65;
+  font-size: 12px;
+  resize: none;
+  padding-left: 10px;
+  padding-top: 8px;
+  text-align: left;
+}
+/*# sourceMappingURL=main.css.map */
